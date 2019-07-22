@@ -12,17 +12,28 @@
   <body>
     <header class="row">
       <div class="col-3">
-        LOGO
+        <div class="circle">
+          <br />
+          Music is
+          <br />
+          the universal
+          <br />
+          language!
+      </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-4 slogan">
         Splurting out song lyrics since 2019
       </div>
-    <div class ="col-5">
-      <% link_to 'Contribute', '#' %>
-      <% link_to 'About', '#' %>
+    <div class ="col-5 links">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
     </div>
     </header>
+
+    <br class="clear" />
+
+    <hr />
 
     <%= yield %>
 
