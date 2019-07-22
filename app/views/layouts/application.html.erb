@@ -30,12 +30,25 @@
       <%= link_to 'About', '#' %>
     </div>
     </header>
-
+    <hr />
     <br class="clear" />
 
-    <hr />
-
+    <div class="container">
     <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", '#', class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly built by <a href="https://kevinnorthrup.netlify.com/">Kevin Northrup</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
